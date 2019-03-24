@@ -48,8 +48,11 @@ namespace JustTesting
 
         static void Main(string[] args)
         {
-            var n = new Number(16, 64 + 36);
-            Console.WriteLine(n);
+            int ns = 32;
+            int i = 31*ns*ns + 31*ns + 31;
+            var n = new Number(ns, i);
+            Console.WriteLine(i + $"[{10}] = " + n + $"[{n.NumberSystem}]");
+            Console.WriteLine(n.GetNumberSystemInfo());
             Console.ReadKey();
         }
     }

@@ -60,6 +60,11 @@ namespace JustTesting
             return Convert.ToChar(Convert.ToInt32('A') + value - 10);
         }
 
+        public string GetNumberSystemInfo()
+        {
+            return $"Number System is {NumberSystem} max = {NumberSystem - 1}:{getSimbolNumber(NumberSystem - 1)}";
+        }
+
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
